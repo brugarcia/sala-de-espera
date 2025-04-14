@@ -334,14 +334,15 @@
   </div>
 
   <!-- Banner inferior -->
-  <glb-ad data-ad-unit="Testes/Exemplos" data-position="banner_slb_meio"></glb-ad>
-
-  <!-- Banners extras -->
+  <div style="border-radius: 6px; overflow: hidden; margin-bottom: 20px;">
+    <glb-ad data-ad-unit="Testes/Exemplos" data-position="banner_materia2"></glb-ad>
+  </div>
+  <!-- Banners extras
   <div class="banners">
     <glb-ad data-ad-unit="Testes/Exemplos" data-position="banner_rm__1"></glb-ad>
     <glb-ad data-ad-unit="Testes/Exemplos" data-position="banner_rm__2"></glb-ad>
     <glb-ad data-ad-unit="Testes/Exemplos" data-position="banner_rm__3"></glb-ad>
-  </div>
+  </div> -->
 
   <!-- Botão de controle de redirecionamento -->
   <div style="margin-top: 2rem; font-size: 0.85rem; color: #ccc; display: flex; align-items: center; gap: 0.5rem;">
@@ -369,7 +370,7 @@
     function updateCountdown() {
       remaining--;
       countdownText.textContent = remaining;
-      progressBar.style.width = `${((waitTime - remaining) / waitTime) * 100}%`;
+      progressBar.style.width = `${((waitTime - remaining) / waitTime) * 100000}%`;
 
       if (remaining <= 0) {
         clearInterval(timer);
