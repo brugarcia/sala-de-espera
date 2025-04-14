@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sala de Espera - Reality Show</title>
 
-  <script src="https://s3.glbimg.com/v1/AUTH_acd8438fd650434baa93efc372c066a1/default-prod/lib-pub-core/lib-pub-core-default-latest.js"></script>
+  <script src="https://s3.glbimg.com/v1/AUTH_acd8438fd650434baa93efc372c066a1/gshow-prod/lib-pub-core/lib-pub-core-gshow-latest.js"></script>
 
   <style>
     * {
@@ -195,7 +195,7 @@
       justify-content: center;
       gap: 1rem;
       width: 100%;
-      max-width: 900px;
+      max-width: 1000px;
       margin-top: 2rem;
     }
 
@@ -300,7 +300,9 @@
 <body>
 
   <!-- Banner superior -->
-  <glb-ad data-ad-unit="Testes/Exemplos" data-position="banner_slb_topo"></glb-ad>
+  <div style="border-radius: 6px; overflow: hidden; margin-bottom: 20px;">
+    <glb-ad data-ad-unit="Testes/Exemplos" data-position="banner_slb_topo"></glb-ad>
+  </div>
 
   <!-- Conteúdo principal -->
   <div class="waiting-container">
@@ -336,19 +338,9 @@
 
   <!-- Banners extras -->
   <div class="banners">
-    <a href="https://gshow.globo.com/realities/bbb/" target="_blank" class="banner">
-      <img
-        src="https://s2-gshow.glbimg.com/-uwgHS2vpsNnDWHFNuxVqvnoHd0=/0x0:500x281/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2023/O/N/vn8gixRTiNIrVgOtTi7A/bbb-23.jpg"
-        alt="Publicidade Extra 1" />
-    </a>
-    <a href="https://gshow.globo.com/realities/estrela-da-casa/" target="_blank" class="banner">
-      <img src="https://upload.wikimedia.org/wikipedia/pt/7/70/Estrela_da_Casa_-_Globo.jpg" alt="Publicidade Extra 2" />
-    </a>
-    <a href="https://receitas.globo.com/receitas-da-tv/chef-de-alto-nivel/chef-de-alto-nivel-inscricoes-abertas-para-novo-reality-da-globo.ghtml"
-      target="_blank" class="banner">
-      <img src="https://upload.wikimedia.org/wikipedia/pt/4/46/Logotipo-do-programa-chef-de-alto-nivel-da-tv-globo.jpg"
-        alt="Publicidade Extra 3" />
-    </a>
+    <glb-ad data-ad-unit="Testes/Exemplos" data-position="banner_rm__1"></glb-ad>
+    <glb-ad data-ad-unit="Testes/Exemplos" data-position="banner_rm__2"></glb-ad>
+    <glb-ad data-ad-unit="Testes/Exemplos" data-position="banner_rm__3"></glb-ad>
   </div>
 
   <!-- Botão de controle de redirecionamento -->
